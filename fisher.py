@@ -1,5 +1,5 @@
 '''
-portal
+portal: Only trigger the server and app
 '''
 
 from app import create_app
