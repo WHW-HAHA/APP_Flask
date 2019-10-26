@@ -9,6 +9,8 @@ verify_ssl = true
 flask = "*"
 requests = "*"
 json = "*"
+socketserver = "*"
+socktserver = "*"
 
 [requires]
 python_version = "3.6"
