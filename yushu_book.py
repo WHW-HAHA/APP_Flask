@@ -1,9 +1,9 @@
 
-from http import HTTP
+from Http import HTTP
 
 class YuShuBook:
     isbn_url = 'http://t.yushu.im/v2/book/isbn/{}'
-    keyword_url = 'http://t.yushu.im/v2/book/search?q={}&count={}&start={}'
+    keyword_url = 'http://t.yushu.im/v2/book/search?q={}&start={}&count={}'
 
     @classmethod
     def search_by_isbn(cls, isbn):

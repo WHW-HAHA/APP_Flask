@@ -6,7 +6,7 @@ from yushu_book import YuShuBook
 
 web = Blueprint('web', __name__)
 
-@web.route('book/search/<q>/<page>')
+@web.route('/book/search/<q>/<page>')
 def search(q, page):
     """
     :param q: 普通关键字
