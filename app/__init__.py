@@ -1,12 +1,13 @@
 from flask import Flask
+from app.models.sql_book import db
 
 def create_app():
-    app = Flask(__name__)  # with a name
-    app.config.from_object('config')  # path of the module
+    app = Flask(__name__)
+    app.config.from_object('app.secure') # instantiate the module from the object
+    app.config.from_objetc('app.string')
     register_blueprint(app)
     return app
 
 def register_blueprint(app):
-    #
     from app.web.book import web
     app.register_blueprint(web)
